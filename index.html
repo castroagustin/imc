@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>I.M.C</title>
+    <script
+      src="https://kit.fontawesome.com/106966e592.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="switch__container">
+        <div class="switch-mode" id="dark-mode">
+          <div id="switch-circle"></div>
+        </div>
+        <p>Dark Mode</p>
+      </div>
+    </header>
+    <main>
+      <section class="imc__container">
+        <div class="imc__container-top">
+          <h2>I.M.C</h2>
+        </div>
+        <div class="imc__container-bottom">
+          <div>
+            <p>Peso en Kg:</p>
+            <input type="number" id="imc-input1" />
+          </div>
+          <div>
+            <p>Altura en metros:</p>
+            <input type="number" id="imc-input2" />
+          </div>
+          <div class="imc__container-bottom--btn" id="imc-btn">Calcular</div>
+        </div>
+      </section>
+      <section class="imc__result">
+        <div class="imc__result-top">
+          <h3>Tu I.M.C es:</h3>
+        </div>
+        <div class="imc__result-bottom">
+          <h4 id="imc-final">0.0</h4>
+        </div>
+      </section>
+      <section class="imc__bar">
+        <div class="imc__bar-top">
+          <img src="assets/flecha.png" id="bar-arrow" />
+        </div>
+        <div class="imc__bar-bottom">
+          <div id="bar-item-1"></div>
+          <div id="bar-item-2"></div>
+          <div id="bar-item-3"></div>
+          <div id="bar-item-4"></div>
+        </div>
+        <p class="imc__details"></p>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
